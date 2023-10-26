@@ -7,6 +7,14 @@ declare global {
 		// interface PageData {}
 		// interface Platform {}
 	}
+
+	type SnackbarMessage = {
+		id: number,
+		message: string,
+		isWiggle?: boolean,
+		onClick?: Function
+		closeCallback?: Function
+	}
 }
 
 export {};

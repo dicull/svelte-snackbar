@@ -1,3 +1,9 @@
+# svelte-snackbar
+스벨트 스낵바 `sveltekit + tailwind`
+
+[live demo]().
+
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
