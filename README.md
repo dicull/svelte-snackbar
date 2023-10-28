@@ -1,7 +1,7 @@
 # svelte-snackbar
 스벨트 스낵바 `sveltekit + tailwind`
 
-[live demo]().
+[live demo](https://video-streaming.lapcat.me/)
 
 
 # create-svelte

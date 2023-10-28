@@ -2,34 +2,7 @@
 	import Header from './Header.svelte';
 	import './styles.css';
 	import SnackBar from "$lib/components/SnackBar.svelte";
-	import { onMount } from "svelte";
-	import { snackBar } from "$lib/store";
 
-	onMount(() => {
-		snackBar.message(`기본 메시지`);
-
-		setTimeout(() => {
-			snackBar.messageWiggle(`강조 메시지`);
-		}, 1000);
-
-		setTimeout(() => {
-			snackBar.message(`닫을때까지 유지`, 0);
-		}, 2000);
-
-		setTimeout(() => {
-			snackBar.message(`메시지 클릭 이벤트`, null, (message) => {
-				alert('메시지 클릭')
-				snackBar.close(message.id);
-			});
-		}, 3000);
-
-		setTimeout(() => {
-			snackBar.message(`메시지 닫기 이벤트`, null, null, () => {
-				alert('메시지 닫기')
-			});
-		}, 4000);
-
-	});
 </script>
 
 <div class="app">

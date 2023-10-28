@@ -80,15 +80,15 @@ pre {
 	margin: 0 auto;
 }
 
-input,
-button {
-	font-size: inherit;
-	font-family: inherit;
-}
+/*input,*/
+/*button {*/
+/*	font-size: inherit;*/
+/*	font-family: inherit;*/
+/*}*/
 
-button:focus:not(:focus-visible) {
-	outline: none;
-}
+/*button:focus:not(:focus-visible) {*/
+/*	outline: none;*/
+/*}*/
 
 @media (min-width: 720px) {
 	h1 {
