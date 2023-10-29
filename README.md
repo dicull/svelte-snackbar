@@ -1,7 +1,33 @@
 # svelte-snackbar
 스벨트 스낵바 `sveltekit + tailwind`
 
-[live demo](https://video-streaming.lapcat.me/)
+[live demo](https://svelte-snackbar.vercel.app/)
+
+### Sample
+
+````js
+import { snackBar } from "$lib/store";
+
+// default
+snackBar.message(`기본 메시지`);
+
+// wiggle
+snackBar.messageWiggle(`강조 메시지`);
+
+// keep
+snackBar.message(`닫을때까지 유지`, 0);
+
+// click event
+snackBar.message(`메시지 클릭 이벤트`, null, (message) => {
+    // TODO
+    snackBar.close(message.id);
+});
+
+// close event
+snackBar.message(`메시지 닫기 이벤트`, null, null, () => {
+    // TODO
+});
+````
 
 
 # create-svelte
